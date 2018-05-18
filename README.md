@@ -64,7 +64,13 @@ Port: 3308
 
 
 ## Interacting with the API
-Below are the available endpoints, you can use an API client service like `Postman`
+
+You can use an API client service like `Postman` to make a request 
+by adding an endpoint at the end of the URL as in the example below:
+
+`http://localhost:8000/card/all`
+
+Below are the available endpoints.
 
 ```php
 $router->get('/card/all', 'CardController@all');
