@@ -1,4 +1,5 @@
 # Prepaid Card
+This application is writing in Laravel Lumen framework
 
 ## Set up
 To run this application, follow the steps below
