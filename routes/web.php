@@ -12,7 +12,7 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return 'This is an API service for the pre-paid card';
 });
 
 $router->get('/card/all', 'CardController@all');
