@@ -25,7 +25,7 @@ docker-compose up -d
 ```
 
 Navigate to the following URL
-[http://localhost:8080](http://localhost:8080)
+[http://localhost:8000](http://localhost:8000)
 
 Before you start interacting with the application make sure you import the Database schema as explained below
 
