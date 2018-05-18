@@ -1,6 +1,9 @@
 # Prepaid Card
 This application is writing in Laravel Lumen framework
 
+## Requires
+Composer, Docker, PHP and Lumen
+
 ## Set up
 To run this application, follow the steps below
 
