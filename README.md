@@ -56,12 +56,45 @@ $router->get('/card/{id}/available-balance', 'CardController@availableBalance');
 $router->get('/card/{id}/activity', 'CardController@getActivity');
 
 $router->post('/card/add', 'CardController@add');
+Request Body example
+
+{
+  "name":"test",
+  "user_id": 2,
+  "currency":"GBP"
+}
+
 $router->post('/card/{id}/top-up', 'CardController@topUp');
+Request Body example
+
+{
+  "amount":20,
+}
+
 $router->post('/card/{id}/authorize', 'CardController@requestPayment');
+Request Body example
+
+{
+  "amount":20,
+}
+
 
 $router->get('/merchant/{id}/transactions', 'MerchantController@getTransactions');
 $router->post('/merchant/add', 'MerchantController@add');
+Request Body example
+
+{
+  "name": "Test Merchant",
+}
+
 $router->post('/merchant/{id}/refund', 'MerchantController@refund');
+{id} is TransactionID
+
 $router->put('/merchant/{id}/capture-transaction', 'MerchantController@capture');
+Request Body example
+
+{
+  "amount":20,
+}
 
 ```
