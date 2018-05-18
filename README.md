@@ -4,7 +4,10 @@ This application is writing in Laravel Lumen framework
 ## Set up
 To run this application, follow the steps below
 
-First cd into `prepaid-card` directory
+First clone this repos and go into prepaid-card directory by doing
+```shell
+cd prepaid-card
+```
 
 Run the composer update cmd
 
@@ -19,7 +22,7 @@ docker-compose up -d
 ```
 
 Navigate to the following URL
-http://localhost:8080](http://localhost:8080)
+[http://localhost:8080](http://localhost:8080)
 
 Before you start interacting with the application make sure you import the Database schema as explained below
 
@@ -27,23 +30,33 @@ Before you start interacting with the application make sure you import the Datab
 The schema file is in the root directory `/prepaid-card/pre-paid-card.sql`
 
 Below is the Docker Database service details
+
 DB_HOST=lumen-db
+
 DB_PORT=3308
+
 DB_DATABASE=lumen
+
 DB_USERNAME=app
+
 DB_PASSWORD=password
 
-To import the schema you can either run the following cmd or use an SQL client like Sequel Pro
-Make sure you are in the root folder `prepaid-card` adn run:
+To import the schema you can either run the following cmd or use an SQL client like `Sequel Pro`
+
+Make sure you are in the root folder `prepaid-card` and run:
 
 ```shell
 docker exec -i prepaidcard_lumen-db_1 mysql -uapp -ppassword lumen < ./pre-paid-card.sql
 ```
 
 If you are using `Sequel Pro` set the config as follow
+
 Host: 127.0.0.1
+
 Username: app
+
 Password: password
+
 Port: 3308
 
 
